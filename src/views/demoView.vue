@@ -3,8 +3,8 @@
     <si-list-drop-down
         @some-data-changed="logAnswer"
         :global-options="list"
-        :disable-add="true"
-        :disable-delete="true"
+        :disable-add="false"
+        :disable-delete="false"
         :initial-dropdowns="testDropdown"
     />
   </div>
