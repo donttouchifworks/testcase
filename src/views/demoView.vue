@@ -4,7 +4,7 @@
         @some-data-changed="logAnswer"
         :global-options="list"
         :disable-add="true"
-        :disable-delete="false"
+        :disable-delete="true"
         :initial-dropdowns="testDropdown"
     />
   </div>

@@ -16,8 +16,8 @@
             </div>
         </template>
     </draggable>
-    <button :disabled="dropDownL.length===0" @click="deleteDropdown">-</button>
-    <button :disabled="dropDownL.length === options.length" @click="showDDCreation">+</button>
+    <button :disabled="dropDownL.length===0 || disableDelete" @click="deleteDropdown">-</button>
+    <button :disabled="dropDownL.length === options.length || disableAdd" @click="showDDCreation">+</button>
     <div v-if="creationProc">
       <v-form @submit.prevent="createDropDown">
         <h3>Select lable and options for dropdown</h3>
